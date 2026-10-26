@@ -1,0 +1,69 @@
+#root {
+  width: 100%;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 32px 20px;
+}
+
+h1 {
+  color: #4936a8;
+}
+
+h2 {
+  margin-top: 32px;
+}
+
+button {
+  margin: 5px;
+  padding: 9px 14px;
+  border: none;
+  border-radius: 6px;
+  background: #4936a8;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #352580;
+}
+
+.posts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 14px;
+  margin-top: 16px;
+}
+
+.card {
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow-wrap: anywhere;
+}
+
+.card h3 {
+  text-transform: capitalize;
+}
+
+.hint {
+  color: #666;
+  font-size: 14px;
+}
+
+.error {
+  color: #c62828;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 20px 12px;
+  }
+}
